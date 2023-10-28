@@ -1,0 +1,96 @@
+<html>
+
+    <head>
+        <title>Case Study</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <link href="style.css" rel="stylesheet">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+    
+    </head>
+    
+    <body>
+        <center>
+            <p>Case study between google lens and Mobilenet</p>
+            <span id="google_lens">Google lens<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAA2FBMVEX///9ChfTqQzX7vAU0qFMwffS0yvr7uQDpNSP2wr82gPTC0/v//Pf+9/c+g/T95rn4+v/pMh38zWP1sq7oJAdsnPb7vCQppUzpOirpKRHj6/3t8/5dk/Xm8+npLhiZuPjK2ftNi/XX4/xzofb914Z9pvePsvjx+PIAnjYWoUGf0Kr62djwiYKDxJLynZgXdPPqt0z7xT380XX94Kr+79FzkNH+89+hnaTNrXHyuixei9+nwfng18j/3pf8xUn+7Ma73sPX69xvvIH85uXvenPrTUBJrmLsWU7V4GHVAAAEMElEQVRoge2ZW2OaMBSAQYkoKsVWC1WsQCuK1+m6rZe1a9fV/f9/tOiUa0ICBLYHvqc+xH6ec3I5iRxXUlJSUlJS8n+gNFEoBdlHQIoCRsXIDcCjAEYRckVCynleKiL3PRljl3v5y0fovB9yn3vpMUUvpvQDE5f3Q+7NQa72Hm7KHSderqWPKXr+pbfWBDnPry2GPsWq2bpXV6Ic8ql6+ZfN9vNdK4O7PzIlIFE5XaQv1ROiKG5uv6Z1j0H8HEMDvlV9iOI2ld9O5d7r76tB/23ywE3S9MYjPVSD/suE4RtysmoH7Y/VMD8SyRNOtRDB0ifVWykr7unvI/o7ajvIFPmBh7BdpF36N8HQJZCc9SOc60H7OZ08cIjKQLefasl5+v683QT84hmNXNF9eQe6kb5fap29+P0bmtw3faEDO1uv1roVEwbvC53BeenXv5CH+1YbsDPLOW7r05NX3ZObeFln0SK3Nl7qn4mjvcSDJgM5x515wW+Ig90Nnk3ogeAvSbO+74YusWrRfBOPdNYZ7qQDrDq0O89OOmuarn3NqjdvuXbiivfsgNWlMJWd2ZW0tOdhpxmTi31g2D1d13t2k7A4crD3bR7ecvZIQB7Hbg3s7fba133J0nocM5i13ZLCTa8U82zB2N5EdfugVozdQHf72AM5id1tLnA7rYK75wDM3Gca+xh30cG91yWwEzHwrydrdO5Z2m/wtyxMN8TQ3o+7YKIbEob2WuxbJbIZY2iPSfw+9fnaA5e8KMiXUnb2gRkn5/k+0u6Sq11G21/OTyR6vmFjZ4eix9nRdWcI9neRQ+zIOc+QUdxuI41ztsf/MsLm1otHMePqnnPZ/a8L0cRnfut4v3DBjIhJfOb7R6NbP9Jto0dgD3jM8Z7IXq8c6WDsnI2e9iwmPIU9/JJ6lLP4MYzGDu8S0ZozWepUdtj5BhtbCd/N52DnFFt2n9FlII0ZLXRKOzztaj0T3iCBbPaemJ1s1Pb9F7Asw7CwYU9eZ8vl7C0veyzD5dRRVdWZCrPi7bOpKhxRnWHB9qUj+HBo08/GPgvIYfiU0Xt23D5PwXAqhOw/E9vfU9uXashOm/u55mYed8QSmYRDpw6+7dq1X2ntr07ELgh0H/2ouPq0qZ9FEk897xZu8PVFSnu07NBOV/jGtRt8vVG4ve2lvlJPl3tk3Sd0n13Us+ojyx2yo/zsu+bZK9pFmj1nF5E71EeNP/hK5/dq3saD/g+I1FMfNG1/8DD8q+4J+NfViWtIp4vZkQQ1behwv+tWKMHth0M1oHeW9HKOW3Uy2rnhzqefJpKHSp/GDlubY/iqk6S5Oerpoo87id6WUK0KuxnlSvezoqo94RycDKmneoi5RpH99KcwifaK7M/PDne91ce19s/sMP7G4kPT6lhwuw3DbzBv4Enf+5WUlJSUlJTkxh9crGWSH9657wAAAABJRU5ErkJggg=="></span>
+            <p>VS</p>
+            <p class="mobilenet btn btn-primary">Mobilenet</p>
+            <ol>
+                <div class="test_image_and_resut1w col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b class="white1">Test image-</b>
+                        <img class= "img" src="bottle.avif">
+                    </li>
+                    <h5 class="first col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet Model</b>
+                        <span></span>
+                    </h5>
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result-</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                </div>
+
+                <div class="test_image_and_resut1w col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b class="white1">Test image-</b>
+                        <img class= "img" src="mobile.webp">
+                    </li>
+                    <h5 class="first col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet Model</b>
+                        <span></span>
+                    </h5>
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result-</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                </div>
+                <div class="test_image_and_resut1w col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b class="white1">Test image-</b>
+                        <img class= "img" src="pen.webp">
+                    </li>
+                    <h5 class="first col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet Model</b>
+                        <span></span>
+                    </h5>
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result-</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                </div>
+                <div class="test_image_and_resut1w col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b class="white1">Test image-</b>
+                        <img class= "img" src="spoon.jpg">
+                    </li>
+                    <h5 class="first col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet Model</b>
+                        <span></span>
+                    </h5>
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result-</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                </div>
+            </ol>
+            <p class="bottom">Developed by- Steve</p>
+        </center>
+    
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
+    
